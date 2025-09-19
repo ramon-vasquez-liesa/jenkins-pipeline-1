@@ -1,0 +1,6 @@
+copier
+invoke
+numpy
+pandas
+psycopg
+
