@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
-                        docker.image("${IMAGE_NAME}").push("${TAG}")
+                        docker.image("${DOCKERHUB_USER}/${IMAGE_NAME}").push("${TAG}")
                     }
                 }
             }
